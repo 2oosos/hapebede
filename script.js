@@ -262,6 +262,18 @@ document.getElementById('mysteryBox').addEventListener('click', () => {
   typingEffect(msg, "Doa Ini sebenarnya panjang,tetapi disingkat. semoga semua yang diinginkan tercapai. #mudahmudahanmudah 💕✨");
 });
 
+// ==== EFEK KETIK UNTUK PESAN ====
+function typingEffect(element, text, speed = 60) {
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
 
 
 // Musik toggle
@@ -350,4 +362,5 @@ function updateParticlesColor(mode) {
     }
   });
 }
+
 
