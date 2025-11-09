@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selamat Ulang Tahun!</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- 🚫 Anti-cache meta tags -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- 🌸 Stylesheet dengan version query (ubah versinya setiap update) -->
+  <link rel="stylesheet" href="styles.css?v=20251109">
 </head>
 <body>
   <nav class="navbar">
@@ -34,16 +41,14 @@
       <p></p>
       <button id="celebrateBtn">Rayakan 🎉</button>
       <div class="time-capsule">
-  <h3>⏳ Friendship Timer</h3>
-  <p id="friendshipTimer">Lagi Ngitung Lek...</p>
-</div>
-
+        <h3>⏳ Friendship Timer</h3>
+        <p id="friendshipTimer">Lagi Ngitung Lek...</p>
+      </div>
     </div>
   </section>
 
   <!-- Halaman 3: Moment -->
   <section class="page" id="page3">
-    
     <div class="gallery">
       <img src="img/roblox.jpg" alt="Moment 1">
       <img src="img/robloxmoshing.png" alt="Moment 2">
@@ -51,48 +56,49 @@
       <img src="img/mama.png" alt="Moment 4">
       <img src="img/aftermama.png" alt="Moment 5">
       <img src="img/aftermama2.png" alt="Moment 6">
-      <img src="img/roblox.png" alt="Moment 6">
-      <img src="img/gendongbroki.jpg" alt="Moment 7">
-      <img src="img/robloxxx (1).png" alt="Moment 8">
-      <img src="img/robloxxx (2).png" alt="Moment 9">
-      <img src="img/robloxxx (3).png" alt="Moment 10">
-      <img src="img/robloxxx (4).png" alt="Moment 11">
-      <img src="img/robloxxx (5).png" alt="Moment 12">
-      <img src="img/robloxxx (6).png" alt="Moment 13">
-      <img src="img/robloxxx (7).png" alt="Moment 14">
-      <img src="img/robloxxx (8).png" alt="Moment 15">
-      <img src="img/robloxxx (9).png" alt="Moment 16">
-      <img src="img/robloxxx (10).png" alt="Moment 17">
-      <img src="img/robloxxx (11).png" alt="Moment 18">
-      <img src="img/robloxxx (12).png" alt="Moment 19">
-      <img src="img/robloxxx (13).png" alt="Moment 20">
-      <img src="img/robloxxx (14).png" alt="Moment 21">
-      <img src="img/robloxxx (15).png" alt="Moment 22">
-      <img src="img/robloxxx (16).png" alt="Moment 23">
-      <img src="img/robloxxx (17).png" alt="Moment 24">
-      <img src="img/robloxxx (18).png" alt="Moment 25">   
-      <img src="img/robloxxx (19).png" alt="Moment 26"> 
+      <img src="img/roblox.png" alt="Moment 7">
+      <img src="img/gendongbroki.jpg" alt="Moment 8">
+      <img src="img/robloxxx (1).png" alt="Moment 9">
+      <img src="img/robloxxx (2).png" alt="Moment 10">
+      <img src="img/robloxxx (3).png" alt="Moment 11">
+      <img src="img/robloxxx (4).png" alt="Moment 12">
+      <img src="img/robloxxx (5).png" alt="Moment 13">
+      <img src="img/robloxxx (6).png" alt="Moment 14">
+      <img src="img/robloxxx (7).png" alt="Moment 15">
+      <img src="img/robloxxx (8).png" alt="Moment 16">
+      <img src="img/robloxxx (9).png" alt="Moment 17">
+      <img src="img/robloxxx (10).png" alt="Moment 18">
+      <img src="img/robloxxx (11).png" alt="Moment 19">
+      <img src="img/robloxxx (12).png" alt="Moment 20">
+      <img src="img/robloxxx (13).png" alt="Moment 21">
+      <img src="img/robloxxx (14).png" alt="Moment 22">
+      <img src="img/robloxxx (15).png" alt="Moment 23">
+      <img src="img/robloxxx (16).png" alt="Moment 24">
+      <img src="img/robloxxx (17).png" alt="Moment 25">
+      <img src="img/robloxxx (18).png" alt="Moment 26">   
+      <img src="img/robloxxx (19).png" alt="Moment 27"> 
       <video src="img/wkwk.mp4" controls muted autoplay loop></video>
     </div>
   </section>
 
-<div class="balloon-zone" id="balloonZone"></div>
+  <!-- Balon dan musik -->
+  <div class="balloon-zone" id="balloonZone"></div>
 
-  <!-- letakkan di dalam <body> -->
-<audio id="bgMusic" loop>
-  <source src="hbd.mp3" type="audio/mp3">
-</audio>
-<button id="musicBtn">🔊</button>
-
-<button id="themeToggle">🌙</button>
+  <audio id="bgMusic" loop>
+    <source src="hbd.mp3" type="audio/mp3">
+  </audio>
+  <button id="musicBtn">🔊</button>
+  <button id="themeToggle">🌙</button>
 
   <!-- Modal Gambar -->
-<div class="image-modal" id="imageModal">
-  <img src="" alt="Preview">
-</div>
+  <div class="image-modal" id="imageModal">
+    <img src="" alt="Preview">
+  </div>
 
-
+  <!-- Canvas untuk confetti -->
   <canvas id="confettiCanvas"></canvas>
-  <script src="script.js"></script>
+
+  <!-- 🧩 Script dengan version query -->
+  <script src="script.js?v=20251109"></script>
 </body>
 </html>
