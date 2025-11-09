@@ -363,4 +363,3 @@ function updateParticlesColor(mode) {
   });
 }
 
-
