@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selamat Ulang Tahun!</title>
+  <link rel="stylesheet" href="styles.css">
 
   <!-- 🚫 Anti-cache meta tags -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Expires" content="0"> -->
 
-  <!-- 🌸 Stylesheet dimuat otomatis (lihat script di bawah) -->
 </head>
 <body>
   <nav class="navbar">
@@ -97,29 +97,7 @@
   <!-- Canvas untuk confetti -->
   <canvas id="confettiCanvas"></canvas>
 
-  <!-- 🔄 Auto-load CSS & JS versi terbaru -->
-  <script>
-    (function() {
-      // Buat versi unik berbasis waktu (YYYYMMDDHHMM)
-      const version = new Date().getFullYear().toString() +
-                      (new Date().getMonth() + 1).toString().padStart(2, '0') +
-                      new Date().getDate().toString().padStart(2, '0') +
-                      new Date().getHours().toString().padStart(2, '0') +
-                      new Date().getMinutes().toString().padStart(2, '0');
-
-      // Tambahkan CSS versi terbaru
-      const css = document.createElement('link');
-      css.rel = 'stylesheet';
-      css.href = `styles.css?v=${version}`;
-      document.head.appendChild(css);
-
-      // Tambahkan JS versi terbaru
-      const js = document.createElement('script');
-      js.src = `script.js?v=${version}`;
-      document.body.appendChild(js);
-
-      console.log(`🚀 Versi terbaru dimuat: ${version}`);
-    })();
-  </script>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
