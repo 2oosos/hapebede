@@ -259,7 +259,7 @@ document.getElementById('mysteryBox').addEventListener('click', () => {
   generateParticles();
   const msg = document.querySelector('#page2 .message-container p');
   msg.textContent = "";
-  typingEffect(msg, "Doa Ini sebenarnya panjang,tetapi disingkat. semoga semua yang diinginkan tercapai. #mudahmudahanmudah 💕✨");
+  typingEffect(msg, "Doa Ini sebenarnya panjang,tetapi disingkat. semoga semua yang diinginkan tercapai. #mudahmudahanmudah 🩵✨");
 });
 
 // ==== EFEK KETIK UNTUK PESAN ====
@@ -362,4 +362,5 @@ function updateParticlesColor(mode) {
     }
   });
 }
+
 
