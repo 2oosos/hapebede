@@ -313,14 +313,25 @@ const startDate = new Date("2018-07-16");
 
 function updateFriendshipTimer() {
   const now = new Date();
-  const diff = now - startDate;
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const years = Math.floor(days / 365);
-  const months = Math.floor((days % 365) / 30);
-  const remainingDays = days - years * 365 - months * 30;
+
+  let years = now.getFullYear() - startDate.getFullYear();
+  let months = now.getMonth() - startDate.getMonth();
+  let days = now.getDate() - startDate.getDate();
+
+  if (days < 0) {
+    months--;
+    // jumlah hari di bulan sebelumnya (relatif ke bulan sekarang)
+    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+    days += prevMonth.getDate();
+  }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
 
   const text = `😱 Adewe Konconan wes Suwe jir, wes 
-  <b>${years}</b> tahun, <b>${months}</b> bulan, dan <b>${remainingDays}</b> hari 😱`;
+  <b>${years}</b> tahun, <b>${months}</b> bulan, dan <b>${days}</b> hari 😱`;
 
   document.getElementById("friendshipTimer").innerHTML = text;
 }
@@ -362,5 +373,3 @@ function updateParticlesColor(mode) {
     }
   });
 }
-
-
